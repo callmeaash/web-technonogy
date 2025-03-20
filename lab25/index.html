@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 10px auto;
+            object-fit: cover;
+            background: #ddd;
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .role {
+            font-size: 14px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Experts</h1>
+        <h2>Our Team Members</h2>
+        <div class="team">
+            <div class="card">
+                <img src="naruto.png" alt="Noman" class="profile-pic">
+                <div class="name">Parash</div>
+                <div class="role">Programmer</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Aaqib" class="profile-pic">
+                <div class="name">Baibhav</div>
+                <div class="role">CEO</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Jhanzaib" class="profile-pic">
+                <div class="name">Aryan</div>
+                <div class="role">WordPress</div>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="Faheem" class="profile-pic">
+                <div class="name">Aashish</div>
+                <div class="role">CyberSec</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
