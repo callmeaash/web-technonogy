@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        .container{
+            width: 50%;
+            margin: 30px auto;
+            padding: 30px;
+            font-size: 20px;
+        }
+        fieldset{
+            border: 2px solid black;
+            text-align: center;
+        }
+        label{
+            display: block;
+            border: 2px solid rgb(99, 97, 97);
+            margin: 20px 80px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        input[type="text"]{
+            width: 500px;
+            padding: 12px 5px;
+            margin-left: 30px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            display: inline-block;
+        }
+        select{
+            width: 80%;
+            height: 40px;
+        }
+        textarea{
+            width: 80%;
+            height: 90px;
+        }
+        .buttons button {
+            padding: 8px 15px;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .register {
+            background-color: blue;
+        }
+        .clear {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+    <div class="container">
+        <h2 style="text-align:center; color:red;">Registration Form</h2>
+        <fieldset>
+            <legend>Personal Details</legend>
+            
+            <label for="name">
+                Name&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="name" placeholder="Enter Name">
+            </label>
+            
+            <label for="address">
+                Address
+                <input type="text" id="address" placeholder="Enter Address">
+            </label>
+            
+            <label for="phone">
+                Phone&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" id="phone" placeholder="Enter Phone Number">
+            </label>
+            
+            <label for="gender">
+                Gender
+                <input type="radio" name="gender" id="male"> Male
+                <input type="radio" name="gender" id="female"> Female
+            </label>
+            
+            <label for="country">
+                Country
+                <select id="country">
+                    <option>Select Country</option>
+                </select>
+            </label>
+            
+            <label for="message">
+                Message
+                <textarea id="message" placeholder="Enter your message"></textarea>
+            </label>
+            
+            <label for="image">
+                Image
+                <input type="file" id="image">
+            </label>
+            
+            <label for="terms">
+                <input type="checkbox" id="terms"> I Accept Term & Condition
+            </label>
+            
+            <div class="buttons">
+                <button class="register" type="submit">Register</button>
+                <button class="clear" type="reset">Clear</button>
+            </div>
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>
